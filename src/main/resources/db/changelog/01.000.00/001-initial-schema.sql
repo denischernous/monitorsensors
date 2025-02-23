@@ -1,6 +1,6 @@
 -- liquibase formatted sql
 
--- changeset :Chernous Denis localFilePath: 01.000.00/001-initial-schema.sql
+-- changeset denis:1
 CREATE TABLE sensors (
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE sensors (
     description VARCHAR(200)
 );
 
--- Добавление предустановленных датчиков
+-- changeset denis:2
 INSERT INTO sensors (name, model, type, range_from, range_to, unit, location, description)
 VALUES
     ('Barometer', 'ac-23', 'Pressure', 22, 45, 'bar', 'Kitchen', 'Measures atmospheric pressure'),
