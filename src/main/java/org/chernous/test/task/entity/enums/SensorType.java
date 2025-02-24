@@ -1,6 +1,5 @@
 package org.chernous.test.task.entity.enums;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum SensorType {
@@ -20,7 +19,6 @@ public enum SensorType {
         return value;
     }
 
-//    @JsonCreator
     public static SensorType fromString(String value) {
         for (SensorType type : SensorType.values()) {
             if (type.value.equalsIgnoreCase(value)) {

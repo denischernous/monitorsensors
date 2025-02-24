@@ -1,5 +1,5 @@
 databaseChangeLog:
   - include:
-      file: 01.000.00/db.changelog.yaml
+      file: monitor.sensor/01.000.00/db.changelog.yaml
       relativeToChangelogFile: true
-
+      context: monitor
