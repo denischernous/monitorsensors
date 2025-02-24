@@ -1,8 +1,13 @@
 package org.chernous.test.task.service;
 
-import java.util.Map;
+import org.chernous.test.task.entity.statistics.SensorStatistics;
+
+import java.time.LocalDate;
+import java.util.List;
 
 public interface StatisticsService {
 
-    Map<String, Object> collectStatistics();
+    void collectStatistics();
+    List<SensorStatistics> getStatistics(LocalDate startDate, LocalDate endDate);
+    List<SensorStatistics> findAll();
 }

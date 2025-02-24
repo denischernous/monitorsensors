@@ -3,7 +3,7 @@ package org.chernous.test.task.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.chernous.test.task.entity.Sensor;
 import org.chernous.test.task.exception.ResourceNotFoundException;
-import org.chernous.test.task.repository.SensorRepository;
+import org.chernous.test.task.repository.main.SensorRepository;
 import org.chernous.test.task.service.SensorService;
 import org.springframework.stereotype.Service;
 

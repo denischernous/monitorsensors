@@ -1,6 +1,5 @@
 package org.chernous.test.task.entity.enums;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /*
